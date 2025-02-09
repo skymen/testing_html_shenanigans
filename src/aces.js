@@ -10,7 +10,8 @@ action(
     deprecated: false,
     isAsync: false,
     listName: "Sample Action",
-    displayText: "Sample Action {0}",
+    displayText:
+      "{my} [b]{0}[/b] [i]{0}[/i] [s]{0}[/s] [u]{0}[/u] [sub]{0}[/sub] [sup]{0}[/sup] [small]{0}[/small] [mark]{0}[/mark] [code]{0}[/code] [bad]{0}[/bad] [good]{0}[/good] [info]{0}[/info] [h1]{0}[/h1] [h2]{0}[/h2] [h3]{0}[/h3] [h4]{0}[/h4] [item]{0}[/item]",
     description: "This is a sample action",
     params: [
       {

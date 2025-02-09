@@ -7,13 +7,14 @@ import {
 import _version from "./version.js";
 export const addonType = ADDON_TYPE.PLUGIN;
 export const type = PLUGIN_TYPE.OBJECT;
-export const id = "sample_addon";
-export const name = "Sample Addon";
+export const id = "test_html_shenanigans";
+export const name = "Test HTML shenanigans";
 export const version = _version;
 export const author = "skymen";
 export const website = "https://www.construct.net";
 export const documentation = "https://www.construct.net";
-export const description = "Description";
+export const description =
+  "C3 addons that experiments with HTML mods for lack of an editor API";
 export const category = ADDON_CATEGORY.GENERAL;
 
 export const hasDomside = false;

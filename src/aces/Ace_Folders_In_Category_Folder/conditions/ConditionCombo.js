@@ -1,23 +1,35 @@
 export const config = {
   highlight: false,
   deprecated: false,
-  listName: "Sample Condition",
-  displayText: "Sample Condition {0}",
+  listName: "Parameter",
+  displayText: "[good]◃[h3]🖈[/h3]▹ [i]{1}[/i] [b]{0}[/b][/good]",
   description: "This is a sample condition",
   params: [
     {
-      id: "param1",
-      name: "Param1",
-      desc: "This is a sample param",
+      id: "name",
+      name: "Name",
+      desc: "The name of the param",
+      type: "string",
+      initialValue: "",
+    },
+    {
+      id: "type",
+      name: "Type",
+      desc: "The type of the param",
       type: "combo",
-      initialValue: "TRUE",
-      items: [{ TRUE: "True" }, { FALSE: "False" }],
+      initialValue: "ANY",
+      items: [
+        { ANY: "any" },
+        { NUMBER: "number" },
+        { STRING: "string" },
+        { BOOLEAN: "boolean" },
+      ],
     },
   ],
 };
 
 export const expose = true;
 
-export default function (param) {
-  return param === 0;
+export default function (name, type) {
+  return true;
 }

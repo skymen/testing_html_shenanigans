@@ -1,0 +1,65 @@
+.conditionNameCell:has(+ .conditionDescCell .bbCodeGood) {
+  display: none;
+}
+.conditionNameCell:has(+ .conditionDescCell .bbCodeInfo) {
+  display: none;
+}
+
+.conditionBlock:has(.conditionDescCell .bbCodeInfo) {
+  grid-template-columns: minmax(var(--eventblock-margin-size), min-content) 0 1fr;
+}
+
+.conditionDescCell:has(.bbCodeGood) {
+  padding: 0;
+  margin: 0;
+
+  background-color: var(--event-sheet-background-color);
+}
+.conditionDescCell[selected]:has(.bbCodeGood) {
+  background-color: inherit;
+}
+
+.conditionDescCell[selected] .bbCodeGood,
+.conditionDescCell[selected] .bbCodeGood:hover {
+  background-color: var(--gray30);
+}
+
+.conditionDescCell .bbCodeGood:hover {
+  background-color: var(--gray8);
+}
+
+.conditionDescCell .bbCodeGood {
+  padding: 0.25em 0.5em;
+  color: #2fcc63;
+  border: 0;
+  border-radius: 3px;
+  background-color: var(--event-sheet-background-color);
+  width: 100%;
+  display: inline-block;
+  margin: 0;
+}
+
+.conditionDescCell .bbCodeGood .bbCodeH3 {
+  font-size: 1rem;
+  transform: scale(1.25);
+  display: inline-block;
+}
+
+.conditionDescCell .bbCodeInfo {
+  color: #0fb4e0;
+  background-color: transparent;
+  margin-top: -10px !important;
+  margin-bottom: -10px !important;
+}
+
+.conditionDescCell .bbCodeInfo .bbCodeH2 {
+  font-size: 1rem;
+  transform: scale(1.5);
+  display: inline-block;
+}
+
+.conditionDescCell .bbCodeH3:has(.bbCodeInfo) {
+  margin-left: -0.25em;
+  margin-bottom: -0.15em;
+  display: inline-block;
+}

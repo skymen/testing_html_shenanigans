@@ -1,11 +1,11 @@
 {
   "languageTag": "en-US",
-  "fileDescription": "Strings for sample_addon.",
+  "fileDescription": "Strings for test_html_shenanigans.",
   "text": {
     "plugins": {
-      "sample_addon": {
-        "name": "Sample Addon",
-        "description": "Description",
+      "test_html_shenanigans": {
+        "name": "Test HTML shenanigans",
+        "description": "C3 addons that experiments with HTML mods for lack of an editor API",
         "help-url": "https://www.construct.net",
         "aceCategories": {
           "Aces_Files_In_Category_Folder": "Aces_Files_In_Category_Folder",
@@ -48,7 +48,7 @@
           },
           "SampleAction": {
             "list-name": "Sample Action",
-            "display-text": "Sample Action {0}",
+            "display-text": "{my} [b]{0}[/b] [i]{0}[/i] [s]{0}[/s] [u]{0}[/u] [sub]{0}[/sub] [sup]{0}[/sup] [small]{0}[/small] [mark]{0}[/mark] [code]{0}[/code] [bad]{0}[/bad] [good]{0}[/good] [info]{0}[/info] [h1]{0}[/h1] [h2]{0}[/h2] [h3]{0}[/h3] [h4]{0}[/h4] [item]{0}[/item]",
             "description": "This is a sample action",
             "params": {
               "param1": {
@@ -71,22 +71,33 @@
             }
           },
           "Trigger": {
-            "list-name": "Sample Trigger",
-            "display-text": "Sample Trigger",
+            "list-name": "On Function",
+            "display-text": "[h3][info]◃[h2]𝑓[/h2]▹ [b]{0}[/b][/info][/h3]",
             "description": "This is a sample trigger",
-            "params": {}
+            "params": {
+              "name": {
+                "name": "Name",
+                "desc": "The name of the function"
+              }
+            }
           },
           "ConditionCombo": {
-            "list-name": "Sample Condition",
-            "display-text": "Sample Condition {0}",
+            "list-name": "Parameter",
+            "display-text": "[good]◃[h3]🖈[/h3]▹ [i]{1}[/i] [b]{0}[/b][/good]",
             "description": "This is a sample condition",
             "params": {
-              "param1": {
-                "name": "Param1",
-                "desc": "This is a sample param",
+              "name": {
+                "name": "Name",
+                "desc": "The name of the param"
+              },
+              "type": {
+                "name": "Type",
+                "desc": "The type of the param",
                 "items": {
-                  "TRUE": "True",
-                  "FALSE": "False"
+                  "ANY": "any",
+                  "NUMBER": "number",
+                  "STRING": "string",
+                  "BOOLEAN": "boolean"
                 }
               }
             }
